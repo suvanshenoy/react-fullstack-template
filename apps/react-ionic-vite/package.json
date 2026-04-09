@@ -1,0 +1,16 @@
+{
+	"name": "@apps/react-ionic-vite",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"cap:android": "bunx cap run android",
+		"cap:add:android": "bunx cap add android",
+		"cap:add:ios": "bunx cap add ios"
+	},
+	"dependencies": {
+		"@deps/react-ionic-vite": "workspace:*"
+	}
+}

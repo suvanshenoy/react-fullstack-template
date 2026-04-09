@@ -1,0 +1,27 @@
+{
+	"name": "@apps/react-native",
+	"version": "1.0.0",
+	"main": "index.tsx",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"android:build": "bunx eas-cli build --platform android",
+		"ios": "expo start --ios",
+		"web": "expo start --web"
+	},
+	"dependencies": {
+		"@packages/react-native-src": "workspace:*",
+		"expo": "~54.0.33",
+		"expo-status-bar": "~3.0.9",
+		"react-native-safe-area-context": "~5.6.0",
+		"react-native-screens": "~4.16.0",
+		"react-native-web": "^0.21.0"
+	},
+	"devDependencies": {
+		"@react-native/babel-preset": "^0.85.0",
+		"@types/react": "~19.1.0",
+		"babel-plugin-module-resolver": "^5.0.3",
+		"typescript": "~5.9.2"
+	},
+	"private": true
+}

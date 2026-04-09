@@ -1,0 +1,25 @@
+{
+	"name": "@deps/nest",
+	"dependencies": {
+		"@nestjs/common": "catalog:nest",
+		"@nestjs/core": "catalog:nest",
+		"@nestjs/platform-express": "catalog:nest",
+		"reflect-metadata": "catalog:nest",
+		"rxjs": "catalog:nest",
+		"@nestjs/cli": "catalog:nest",
+		"@nestjs/schematics": "catalog:nest",
+		"@nestjs/testing": "catalog:nest",
+		"@types/express": "catalog:nest",
+		"@types/jest": "catalog:nest",
+		"@types/node": "catalog:nest",
+		"@types/supertest": "catalog:nest",
+		"jest": "catalog:nest",
+		"source-map-support": "catalog:nest",
+		"supertest": "catalog:nest",
+		"ts-jest": "catalog:nest",
+		"ts-loader": "catalog:nest",
+		"ts-node": "catalog:nest",
+		"tsconfig-paths": "catalog:nest",
+		"typescript": "catalog:nest"
+	}
+}

@@ -1,0 +1,73 @@
+version: "3"
+
+tasks:
+  react-vite:web:
+    dir: ./apps/react-vite
+    cmd: bun run dev
+
+  react-vite:web:build:
+    dir: ./apps/react-vite
+    cmd: bun run build
+
+  react-ionic-vite:web:
+    dir: ./apps/react-ionic-vite
+    cmd: bun run dev
+
+  react-ionic-vite:web:build:
+    dir: ./apps/react-ionic-vite
+    cmd: bun run build
+
+  react-ionic-vite:android:
+    dir: ./apps/react-ionic-vite
+    cmd: bun run cap:android
+
+  react-ionic-vite:ios:
+    dir: ./apps/react-ionic-vite
+    cmd: bun run cap:ios
+
+  react-native:android:
+    dir: ./apps/react-native
+    cmd: bun run android
+
+  react-native:android:build:
+    dir: ./apps/react-native
+    cmd: bun run android:build
+
+  nest:server:
+    dir: ./packages/nest-src
+    cmd: bunx nest start
+
+  nest:build:
+    dir: ./packages/nest-src
+    cmd: bunx nest build
+
+  nest:server:watch:
+    dir: ./packages/nest-src
+    cmd: bunx nest start --watch
+
+  nest:server:watch:debug:
+    dir: ./packages/nest-src
+    cmd: bunx nest start --watch --debug
+
+  nest:server:test:
+    dir: ./apps/nest
+    cmd: bun run test
+
+  nest:server:test:watch:
+    dir: ./apps/nest
+    cmd: bun run test:watch
+
+  nest:server:test:cov:
+    dir: ./apps/nest
+    cmd: bun run test:cov
+
+  nest:server:test:debug:
+    dir: ./apps/nest
+    cmd: bun run test:debug
+
+  nest:server:test:e2e:
+    dir: ./apps/nest
+    cmd: bun run test:e2e
+
+  setup:
+    cmd: bun i

@@ -1,0 +1,13 @@
+{
+	"name": "@apps/react-vite",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build"
+	},
+	"dependencies": {
+		"@deps/react-vite": "workspace:*"
+	}
+}

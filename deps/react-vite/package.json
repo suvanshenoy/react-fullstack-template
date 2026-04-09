@@ -1,0 +1,23 @@
+{
+	"name": "@deps/react-vite",
+	"dependencies": {
+		"react": "catalog:react-common",
+		"react-dom": "catalog:react-common",
+		"react-router": "catalog:react-common",
+		"tailwindcss": "catalog:react-common",
+		"clsx": "catalog:react-common",
+		"tailwind-merge": "catalog:react-common",
+		"@types/react": "catalog:react-common-types",
+		"@types/react-dom": "catalog:react-common-types",
+		"@types/react-router": "catalog:react-common-types",
+		"@types/react-router-dom": "catalog:react-common-types",
+		"@babel/core": "catalog:react-common",
+		"@rolldown/plugin-babel": "catalog:react-common",
+		"@tailwindcss/vite": "catalog:react-common",
+		"@types/babel__core": "catalog:react-common-types",
+		"@vitejs/plugin-react": "catalog:react-common",
+		"babel-plugin-react-compiler": "catalog:react-common",
+		"typescript": "catalog:react-common",
+		"vite": "catalog:react-common"
+	}
+}
