@@ -17,9 +17,13 @@ import "@ionic/react/css/display.css";
 // import '@ionic/react/css/palettes/dark.class.css';
 import "@ionic/react/css/palettes/dark.system.css";
 
-import App from "@packages/react-ionic-vite-src/app";
+import { App } from "@packages/react-ionic-vite-src/app";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+
+import { defineCustomElements } from "@ionic/pwa-elements/loader";
+
+defineCustomElements(window);
 
 createRoot(document.getElementById("root") as HTMLDivElement).render(
 	<StrictMode>

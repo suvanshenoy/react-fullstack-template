@@ -1,5 +1,5 @@
 import * as Pages from "./pages";
 
-export default function App() {
+export function App() {
 	return <Pages.HomePage />;
 }

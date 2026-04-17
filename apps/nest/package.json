@@ -18,7 +18,9 @@
 		"test:e2e": "jest --config ./test/jest-e2e.json"
 	},
 	"dependencies": {
-		"@deps/nest": "workspace:*"
+		"@deps/nest": "workspace:*",
+		"@deps/orm": "workspace:*",
+		"@packages/nest-src": "workspace:*"
 	},
 	"jest": {
 		"moduleFileExtensions": [
@@ -26,7 +28,7 @@
 			"json",
 			"ts"
 		],
-		"rootDir": "../../packages/nestjs-src",
+		"rootDir": "../../packages/nest-src",
 		"testRegex": ".*\\.spec\\.ts$",
 		"transform": {
 			"^.+\\.(t|j)s$": "ts-jest"

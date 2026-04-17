@@ -1,6 +1,6 @@
 import "./global.css";
 
-import App from "@packages/react-vite-src/app";
+import { App } from "@packages/react-vite-src/app";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 

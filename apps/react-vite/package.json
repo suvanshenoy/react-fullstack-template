@@ -8,6 +8,7 @@
 		"build": "tsc -b && vite build"
 	},
 	"dependencies": {
-		"@deps/react-vite": "workspace:*"
+		"@deps/react-vite": "workspace:*",
+		"@packages/react-vite-src": "workspace:*"
 	}
 }

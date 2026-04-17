@@ -1,0 +1,10 @@
+{
+	"name": "@deps/orm",
+	"dependencies": {
+		"@prisma/adapter-better-sqlite3": "^7.7.0",
+		"@prisma/client": "^7.7.0",
+		"dotenv": "^17.4.2",
+		"@types/better-sqlite3": "^7.6.13",
+		"prisma": "^7.7.0"
+	}
+}

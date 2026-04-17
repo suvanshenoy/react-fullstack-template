@@ -1,12 +1,12 @@
-import * as IonicReact from "@ionic/react";
+import { IonApp, setupIonicReact } from "@ionic/react";
 import * as Pages from "./pages";
 
-IonicReact.setupIonicReact({ mode: "md" });
+setupIonicReact();
 
-export default function App() {
+export function App() {
 	return (
-		<IonicReact.IonApp>
+		<IonApp>
 			<Pages.HomePage />
-		</IonicReact.IonApp>
+		</IonApp>
 	);
 }
