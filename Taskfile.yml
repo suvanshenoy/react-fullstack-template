@@ -71,32 +71,83 @@ tasks:
     dir: ./packages/nest-src
     cmd: bun run nest start --watch --debug
 
-  nest:test:
-    dir: ./apps/nest
-    cmd: bun run test
-
-  nest:test:watch:
-    dir: ./apps/nest
-    cmd: bun run test:watch
-
-  nest:test:cov:
-    dir: ./apps/nest
-    cmd: bun run test:cov
-
-  nest:test:debug:
-    dir: ./apps/nest
-    cmd: bun run test:debug
-
-  nest:test:e2e:
-    dir: ./apps/nest
-    cmd: bun run test:e2e
-
   nest:orm:
     dir: ./packages/nest-src
     cmds:
       # - bun run prisma init --datasource-provider sqlite --output ./generated/prisma
       - bun run prisma generate
       - bun run prisma migrate dev --name init
+
+  biome:init:
+    cmds:
+      - bun --cwd ./apps/react-vite biome init
+      - bun --cwd ./apps/react-ionic-vite biome init
+      - bun --cwd ./apps/react-native biome init
+      - bun --cwd ./apps/nest biome init
+      - bun --cwd ./packages/react-vite-src biome init
+      - bun --cwd ./packages/react-ionic-vite-src biome init
+      - bun --cwd ./packages/react-native-src biome init
+      - bun --cwd ./packages/nest-src biome init
+
+  biome:check:
+    cmds:
+      - bun --cwd ./apps/react-vite  biome check
+      - bun --cwd ./apps/react-ionic-vite  biome check
+      - bun --cwd ./apps/react-native biome check
+      - bun --cwd ./apps/nest biome check
+
+      - bun --cwd ./packages/react-vite-src biome check
+      - bun --cwd ./packages/react-ionic-vite-src biome check
+      - bun --cwd ./packages/react-native-src biome check
+      - bun --cwd ./packages/nest-src biome check
+
+  biome:fix:
+    cmds:
+      - bun --cwd ./apps/react-vite biome check --fix
+      - bun --cwd ./apps/react-ionic-vite biome check --fix
+      - bun --cwd ./apps/react-native biome check --fix
+      - bun --cwd ./apps/nest biome check --fix
+
+      - bun --cwd ./packages/react-vite-src biome check --fix
+      - bun --cwd ./packages/react-ionic-vite-src biome check --fix
+      - bun --cwd ./packages/react-native-src biome check --fix
+      - bun --cwd ./packages/nest-src biome check --fix
+
+  biome:fix:unsafe:
+    cmds:
+      - bun --cwd ./apps/react-vite biome check --fix --unsafe
+      - bun --cwd ./apps/react-ionic-vite biome check --fix --unsafe
+      - bun --cwd ./apps/react-native biome check --fix --unsafe
+      - bun --cwd ./apps/nest biome check --fix --unsafe
+
+      - bun --cwd ./packages/react-vite-src biome check --fix --unsafe
+      - bun --cwd ./packages/react-ionic-vite-src biome check --fix --unsafe
+      - bun --cwd ./packages/react-native-src biome check --fix --unsafe
+      - bun --cwd ./packages/nest-src biome check --fix --unsafe
+
+  biome:migrate:
+    cmds:
+      - bun --cwd ./apps/react-vite biome migrate --write
+      - bun --cwd ./apps/react-ionic-vite biome migrate --write
+      - bun --cwd ./apps/react-native biome migrate --write
+      - bun --cwd ./apps/nest biome migrate --write
+
+      - bun --cwd ./packages/react-vite-src biome migrate --write
+      - bun --cwd ./packages/react-ionic-vite-src biome migrate --write
+      - bun --cwd ./packages/react-native-src biome migrate --write
+      - bun --cwd ./packages/nest-src biome migrate --write
+
+  biome:cleanup:
+    cmds:
+      - rm -rf ./apps/react-vite/biome.json
+      - rm -rf ./apps/react-ionic-vite/biome.json
+      - rm -rf ./apps/react-native/biome.json
+      - rm -rf ./apps/nest/biome.json
+
+      - rm -rf ./packages/react-vite-src/biome.json
+      - rm -rf ./packages/react-ionic-vite-src/biome.json
+      - rm -rf ./packages/react-native-src/biome.json
+      - rm -rf ./packages/nest-src/biome.json
 
   cleanup:
     cmds:
