@@ -3,9 +3,14 @@
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
 		"jsx": "react-jsx",
-		"types": ["vite/client"],
+		"types": ["vite/client", "node"],
 		"noEmit": true,
-		"lib": ["DOM", "ESNext"]
+		"lib": ["DOM", "ESNext", "DOM.Iterable"]
 	},
-	"include": ["vite.config.ts"]
+	"include": [
+		"vite.config.ts",
+		"main.tsx",
+		"../../packages/react-ionic-vite-src/**/*"
+	],
+	"exclude": ["node_modules", "dist"]
 }

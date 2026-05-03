@@ -1,12 +1,12 @@
 import { IonApp, setupIonicReact } from "@ionic/react";
-import * as Pages from "./pages";
+import { HomePage } from "./pages";
 
 setupIonicReact();
 
 export function App() {
 	return (
 		<IonApp>
-			<Pages.HomePage />
+			<HomePage />
 		</IonApp>
 	);
 }

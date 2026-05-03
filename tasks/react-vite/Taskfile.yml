@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: "3"
+
+tasks:
+  web:
+    dir: ../../apps/react-vite
+    cmd: bun vite
+
+  web:build:
+    dir: ../../apps/react-vite
+    cmds:
+      - tsc -b
+      - bun vite build

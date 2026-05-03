@@ -1,18 +1,9 @@
 {
 	"name": "@apps/react-native",
 	"version": "1.0.0",
-	"main": "index.tsx",
-	"scripts": {
-		"start": "expo start",
-		"android": "expo start --android",
-		"android:build": "bunx eas-cli build --platform android",
-		"ios": "expo start --ios",
-		"ios:build": "bunx eas-cli build --platform ios",
-		"web": "expo start --web"
-	},
+	"main": "expo-router/entry",
 	"dependencies": {
 		"@deps/react-native": "workspace:*",
 		"@packages/react-native-src": "workspace:*"
-	},
-	"private": true
+	}
 }

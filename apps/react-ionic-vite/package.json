@@ -3,14 +3,6 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && bunx vite build",
-		"cap:android": "bunx @capacitor/cli run android",
-		"cap:add:android": "bunx @capacitor/cli add android",
-		"cap:add:ios": "bunx @capacitor/cli add ios",
-		"cap:ios": "bunx @capacitor/cli run ios"
-	},
 	"dependencies": {
 		"@deps/react-ionic-vite": "workspace:*",
 		"@packages/react-ionic-vite-src": "workspace:*"

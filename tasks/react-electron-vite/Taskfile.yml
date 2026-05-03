@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: "3"
+
+tasks:
+  dev:
+    dir: ../../apps/react-electron-vite
+    cmd: bun electron-vite dev -- --no-sandbox
+
+  build:
+    dir: ../../apps/react-electron-vite
+    cmds:
+      - tsc --composite false
+      - bun electron-vite build
+
+  postinstall:
+    dir: ../../apps/react-electron-vite
+    cmd: bun electron-builder install-app-deps
+
+  build:unpack:
+    dir: ../../apps/react-electron-vite
+    cmds:
+      - task: build
+      - cmd: bun electron-builder --dir
+
+  build:linux:
+    dir: ../../apps/react-electron-vite
+    cmds:
+      - task: build
+      - cmd: bun electron-builder --linux
+
+  build:win:
+    dir: ../../apps/react-electron-vite
+    cmds:
+      - task: build
+      - cmd: bun electron-builder --win
+
+  build:mac:
+    dir: ../../apps/react-electron-vite
+    cmds:
+      - task: build
+      - cmd: bun electron-builder --mac

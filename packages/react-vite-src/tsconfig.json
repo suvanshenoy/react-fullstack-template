@@ -4,6 +4,8 @@
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"noEmit": true,
-		"lib": ["DOM", "ESNext"]
-	}
+		"types": ["vite/client", "node"],
+		"lib": ["DOM", "ESNext", "DOM.Iterable"]
+	},
+	"exclude": ["node_modules"]
 }
