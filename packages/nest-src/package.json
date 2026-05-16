@@ -1,7 +1,0 @@
-{
-	"name": "@packages/nest-src",
-	"dependencies": {
-		"@deps/nest": "workspace:*",
-		"@deps/orm": "workspace:*"
-	}
-}

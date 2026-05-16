@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@internal/react-ionic-vite-src",
+	"dependencies": {
+		"@deps/react-ionic-vite": "workspace:*"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"composite": true,
+		"jsx": "react-jsx",
+		"types": ["vite/client", "node"],
+		"noEmit": true,
+		"lib": ["DOM", "ESNext", "DOM.Iterable"]
+	},
+	"include": [
+		"vite.config.ts",
+		"main.tsx",
+		"../../internal/react-vite-src/**/*"
+	],
+	"exclude": ["node_modules", "dist"]
+}

@@ -4,11 +4,11 @@ version: "3"
 
 tasks:
   web:
-    dir: ../../apps/react-vite
+    dir: ../../core/react-vite
     cmd: bun vite
 
   web:build:
-    dir: ../../apps/react-vite
+    dir: ../../core/react-vite
     cmds:
       - tsc -b
       - bun vite build

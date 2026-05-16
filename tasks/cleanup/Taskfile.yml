@@ -5,23 +5,23 @@ version: "3"
 tasks:
   cleanup:
     cmds:
-      - rm -rf ../../packages/react-vite-src/node_modules
-      - rm -rf ../../packages/react-ionic-vite-src/node_modules
-      - rm -rf ../../packages/react-ionic-vite-src/android
-      - rm -rf ../../packages/react-native-src/node_modules
-      - rm -rf ../../packages/react-native-src/android
-      - rm -rf ../../packages/react-electron-vite-src/node_modules
-      - rm -rf ../../packages/nest-src/node_modules
+      - rm -rf ../../internal/react-vite-src/node_modules
+      - rm -rf ../../internal/react-ionic-vite-src/node_modules
+      - rm -rf ../../internal/react-ionic-vite-src/android
+      - rm -rf ../../internal/react-native-src/node_modules
+      - rm -rf ../../internal/react-native-src/android
+      - rm -rf ../../internal/react-electron-vite-src/node_modules
+      - rm -rf ../../internal/nest-src/node_modules
 
-      - rm -rf ../../apps/react-vite/node_modules
-      - rm -rf ../../apps/react-vite/dist
-      - rm -rf ../../apps/react-ionic-vite/node_modules
-      - rm -rf ../../apps/react-ionic-vite/dist
-      - rm -rf ../../apps/react-native/node_modules
-      - rm -rf ../../apps/react-electron-vite/node_modules
-      - rm -rf ../../apps/react-electron-vite/dist
-      - rm -rf ../../apps/nest/node_modules
-      - rm -rf ../../apps/nest/dist
+      - rm -rf ../../core/react-vite/node_modules
+      - rm -rf ../../core/react-vite/dist
+      - rm -rf ../../core/react-ionic-vite/node_modules
+      - rm -rf ../../core/react-ionic-vite/dist
+      - rm -rf ../../core/react-native/node_modules
+      - rm -rf ../../core/react-electron-vite/node_modules
+      - rm -rf ../../core/react-electron-vite/dist
+      - rm -rf ../../core/nest/node_modules
+      - rm -rf ../../core/nest/dist
 
       - rm -rf ../../deps/react-vite/node_modules
       - rm -rf ../../deps/react-ionic-vite/node_modules

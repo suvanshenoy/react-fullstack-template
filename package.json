@@ -3,8 +3,9 @@
 	"name": "react-fullstack-template",
 	"workspaces": {
 		"packages": [
-			"./apps/*",
-			"./packages/*",
+			"./deploy/*",
+			"./internal/*",
+			"./core/*",
 			"./deps/*"
 		]
 	},

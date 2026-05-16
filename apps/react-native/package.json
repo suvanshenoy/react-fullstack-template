@@ -1,9 +1,0 @@
-{
-	"name": "@apps/react-native",
-	"version": "1.0.0",
-	"main": "expo-router/entry",
-	"dependencies": {
-		"@deps/react-native": "workspace:*",
-		"@packages/react-native-src": "workspace:*"
-	}
-}

@@ -4,17 +4,17 @@ version: "3"
 
 tasks:
   web:
-    dir: ../../apps/react-native
+    dir: ../../core/react-native
     cmd: bun expo start --web
 
   add:android:
-    dir: ../../apps/react-native
+    dir: ../../core/react-native
     cmd: bun expo prebuild --platform android
 
   android:
-    dir: ../../apps/react-native
+    dir: ../../core/react-native
     cmd: bun expo start --android
 
   android:build:
-    dir: ../../apps/react-native
+    dir: ../../core/react-native
     cmd: bun eas-cli build --platform android

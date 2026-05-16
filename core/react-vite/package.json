@@ -1,0 +1,10 @@
+{
+	"name": "@core/react-vite",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"dependencies": {
+		"@deps/react-vite": "workspace:*",
+		"@internal/react-vite-src": "workspace:*"
+	}
+}

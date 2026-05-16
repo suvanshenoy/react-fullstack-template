@@ -1,0 +1,8 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@internal/nest-src",
+	"dependencies": {
+		"@deps/nest": "workspace:*",
+		"@deps/orm": "workspace:*"
+	}
+}
