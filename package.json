@@ -4,12 +4,13 @@
 	"workspaces": {
 		"packages": [
 			"./deploy/*",
-			"./internal/*",
+			"./packages/*",
 			"./core/*",
+			"./apps/*",
 			"./deps/*"
 		]
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.13"
+		"@biomejs/biome": "2.4.13"
 	}
 }

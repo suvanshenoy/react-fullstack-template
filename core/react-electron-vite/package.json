@@ -7,6 +7,6 @@
 	"homepage": "https://electron-vite.org",
 	"dependencies": {
 		"@deps/react-electron-vite": "workspace:*",
-		"@internal/react-electron-vite-src": "workspace:*"
+		"@apps/react-electron-vite-src": "workspace:*"
 	}
 }

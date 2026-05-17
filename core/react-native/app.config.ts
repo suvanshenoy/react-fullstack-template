@@ -32,7 +32,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 		[
 			"expo-router",
 			{
-				root: "../../internal/react-native-src/app",
+				root: "../../apps/react-native-src/app",
 			},
 		],
 		[

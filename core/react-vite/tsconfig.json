@@ -8,10 +8,6 @@
 		"noEmit": true,
 		"lib": ["DOM", "ESNext", "DOM.Iterable"]
 	},
-	"include": [
-		"vite.config.ts",
-		"main.tsx",
-		"../../internal/react-vite-src/**/*"
-	],
+	"include": ["vite.config.ts", "main.tsx", "../../apps/react-vite-src/**/*"],
 	"exclude": ["node_modules", "dist"]
 }

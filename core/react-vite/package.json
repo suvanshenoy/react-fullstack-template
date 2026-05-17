@@ -5,6 +5,6 @@
 	"type": "module",
 	"dependencies": {
 		"@deps/react-vite": "workspace:*",
-		"@internal/react-vite-src": "workspace:*"
+		"@apps/react-vite-src": "workspace:*"
 	}
 }

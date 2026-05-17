@@ -12,39 +12,57 @@ tasks:
   start:
     dotenv:
       - .env
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       - echo "[NODE_ENV=$NODE_ENV]"
       - NODE_ENV=$NODE_ENV && bun nest start
 
   build:
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       - echo "[NODE_ENV=$NODE_ENV]"
       - NODE_ENV=$NODE_ENV && bun nest build
 
   start:watch:
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       - echo "[NODE_ENV=$NODE_ENV]"
       - NODE_ENV=$NODE_ENV && bun nest start --watch
 
   start:watch:debug:
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       - echo "[NODE_ENV=$NODE_ENV]"
       - NODE_ENV=$NODE_ENV && bun nest start --watch --debug
 
   orm:init:
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       # - bun run prisma init --datasource-provider postgresql --output ./generated/prisma
       - bun prisma generate
       - bun prisma migrate dev --name init
 
   orm:deploy:
-    dir: ../../internal/nest-src
+    dir: ../../apps/nest-src
     cmds:
       - task: orm:init
       - bun prisma migrate deploy
       - bun prisma db push
+
+  setup:
+    - cp -rf ../../apps/nest-src/node_modules/@deps/nest/node_modules/* ../../apps/nest-src/node_modules
+    - cp -rf ../../apps/nest-src/node_modules/@deps/nest/node_modules/.bin ../../apps/nest-src/node_modules
+
+    - cp -rf ../../apps/nest-src/node_modules/@deps/orm/node_modules/* ../../apps/nest-src/node_modules
+    - cp -rf ../../apps/nest-src/node_modules/@deps/orm/node_modules/.bin ../../apps/nest-src/node_modules
+
+    - cp -rf ../../core/nest/node_modules/@deps/nest/node_modules/* ../../core/nest/node_modules
+    - cp -rf ../../core/nest/node_modules/@deps/nest/node_modules/.bin ../../core/nest/node_modules
+
+    - cp -rf ../../core/nest/node_modules/@deps/orm/node_modules/* ../../core/nest/node_modules
+    - cp -rf ../../core/nest/node_modules/@deps/orm/node_modules/.bin ../../core/nest/node_modules
+
+    - cp -rf ../../core/nest/node_modules/@apps/nest-src/node_modules/* ../../core/nest/node_modules
+    - cp -rf ../../core/nest/node_modules/@apps/nest-src/node_modules/.bin ../../core/nest/node_modules
+
+    - defer: cp -rf ../../apps/nest-src/node_modules/@packages/nest/node_modules/* ../../apps/nest-src/node_modules

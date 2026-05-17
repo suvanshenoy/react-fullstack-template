@@ -5,6 +5,6 @@
 	"type": "module",
 	"dependencies": {
 		"@deps/react-ionic-vite": "workspace:*",
-		"@internal/react-ionic-vite-src": "workspace:*"
+		"@apps/react-ionic-vite-src": "workspace:*"
 	}
 }

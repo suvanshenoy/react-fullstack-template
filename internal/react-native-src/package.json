@@ -1,7 +1,0 @@
-{
-	"$schema": "https://json.schemastore.org/package",
-	"name": "@internal/react-native-src",
-	"dependencies": {
-		"@deps/react-native": "workspace:*"
-	}
-}

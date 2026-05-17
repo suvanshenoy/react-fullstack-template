@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-const root = path.resolve(__dirname, "../../internal/react-vite-src");
+const root = path.resolve(__dirname, "../../apps/react-vite-src");
 
 export default defineConfig({
 	root: "./",
@@ -15,7 +15,7 @@ export default defineConfig({
 	],
 	resolve: {
 		alias: {
-			"@internal/react-vite-src": root,
+			"@apps/react-vite-src": root,
 		},
 	},
 });

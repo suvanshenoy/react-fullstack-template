@@ -4,6 +4,6 @@
 	"main": "expo-router/entry",
 	"dependencies": {
 		"@deps/react-native": "workspace:*",
-		"@internal/react-native-src": "workspace:*"
+		"@apps/react-native-src": "workspace:*"
 	}
 }

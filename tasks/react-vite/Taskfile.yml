@@ -12,3 +12,15 @@ tasks:
     cmds:
       - tsc -b
       - bun vite build
+
+  setup:
+    - cp -rf ../../apps/react-vite-src/node_modules/@deps/react-vite/node_modules/* ../../apps/react-vite-src/node_modules
+    - cp -rf ../../apps/react-vite-src/node_modules/@deps/react-vite/node_modules/.bin ../../apps/react-vite-src/node_modules
+
+    - cp -rf ../../core/react-vite/node_modules/@deps/react-vite/node_modules/* ../../core/react-vite/node_modules
+    - cp -rf ../../core/react-vite/node_modules/@deps/react-vite/node_modules/.bin ../../core/react-vite/node_modules
+
+    - cp -rf ../../core/react-vite/node_modules/@apps/react-vite-src/node_modules/* ../../core/react-vite/node_modules
+    - cp -rf ../../core/react-vite/node_modules/@apps/react-vite-src/node_modules/.bin ../../core/react-vite/node_modules
+
+    - defer: cp -rf ../../apps/react-vite-src/node_modules/@packages/react-vite/node_modules/* ../../apps/react-vite-src/node_modules

@@ -1,6 +1,6 @@
-import "@internal/react-ionic-vite-src/global.css";
+import "@apps/react-ionic-vite-src/global.css";
 
-import { App } from "@internal/react-ionic-vite-src/app";
+import { App } from "@apps/react-ionic-vite-src/app";
 import { defineCustomElements } from "@ionic/pwa-elements/loader";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";

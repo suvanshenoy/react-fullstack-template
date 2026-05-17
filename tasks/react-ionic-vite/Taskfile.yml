@@ -23,3 +23,15 @@ tasks:
       - task: web:build
       - defer: bun --cwd ../../core/react-ionic-vite cap run android
       - task: add:android
+
+  setup:
+    - cp -rf ../../apps/react-ionic-vite-src/node_modules/@deps/react-ionic-vite/node_modules/* ../../apps/react-ionic-vite-src/node_modules
+    - cp -rf ../../apps/react-ionic-vite-src/node_modules/@deps/react-ionic-vite/node_modules/.bin ../../apps/react-ionic-vite-src/node_modules
+
+    - cp -rf ../../core/react-ionic-vite/node_modules/@deps/react-ionic-vite/node_modules/* ../../core/react-ionic-vite/node_modules
+    - cp -rf ../../core/react-ionic-vite/node_modules/@deps/react-ionic-vite/node_modules/.bin ../../core/react-ionic-vite/node_modules
+
+    - cp -rf ../../core/react-ionic-vite/node_modules/@apps/react-ionic-vite-src/node_modules/* ../../core/react-ionic-vite/node_modules
+    - cp -rf ../../core/react-ionic-vite/node_modules/@apps/react-ionic-vite-src/node_modules/.bin ../../core/react-ionic-vite/node_modules
+
+    - defer: cp -rf ../../apps/react-ionic-vite-src/node_modules/@packages/react-ionic-vite/node_modules/* ../../apps/react-ionic-vite-src/node_modules

@@ -10,7 +10,7 @@ export default defineConfig({
 				input: {
 					index: resolve(
 						__dirname,
-						"../../packages/react-electron-vite-src/main/index.ts",
+						"../../apps/react-electron-vite-src/main/index.ts",
 					),
 				},
 			},
@@ -22,7 +22,7 @@ export default defineConfig({
 				input: {
 					index: resolve(
 						__dirname,
-						"../../packages/react-electron-vite-src/preload/index.ts",
+						"../../apps/react-electron-vite-src/preload/index.ts",
 					),
 				},
 			},

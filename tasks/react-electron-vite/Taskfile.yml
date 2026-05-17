@@ -40,3 +40,11 @@ tasks:
     cmds:
       - task: build
       - cmd: bun electron-builder --mac
+  setup:
+    - cp -rf ../../apps/react-electron-vite-src/node_modules/@deps/react-electron-vite/node_modules/* ../../apps/react-electron-vite-src/node_modules
+    - cp -rf ../../apps/react-electron-vite-src/node_modules/@deps/react-electron-vite/node_modules/.bin ../../apps/react-electron-vite-src/node_modules
+
+    - cp -rf ../../core/react-electron-vite/node_modules/@apps/react-electron-vite-src/node_modules/* ../../core/react-electron-vite/node_modules
+    - cp -rf ../../core/react-electron-vite/node_modules/@apps/react-electron-vite-src/node_modules/.bin ../../core/react-electron-vite/node_modules
+
+    - defer: cp -rf ../../apps/react-electron-vite-src/node_modules/@packages/react-electron-vite/node_modules/* ../../apps/react-electron-vite-src/node_modules

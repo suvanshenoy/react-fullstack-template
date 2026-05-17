@@ -8,7 +8,7 @@
 	"dependencies": {
 		"@deps/nest": "workspace:*",
 		"@deps/orm": "workspace:*",
-		"@internal/nest-src": "workspace:*"
+		"@apps/nest-src": "workspace:*"
 	},
 	"jest": {
 		"moduleFileExtensions": [
@@ -16,7 +16,7 @@
 			"json",
 			"ts"
 		],
-		"rootDir": "../../internal/nest-src",
+		"rootDir": "../../apps/nest-src",
 		"testRegex": ".*\\.spec\\.ts$",
 		"transform": {
 			"^.+\\.(t|j)s$": "ts-jest"

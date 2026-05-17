@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
 
-const root = path.resolve(__dirname, "../../packages/react-ionic-vite-src");
+const root = path.resolve(__dirname, "../../apps/react-ionic-vite-src");
 
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), "");
@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
 		],
 		resolve: {
 			alias: {
-				"@packages/react-ionic-vite-src": root,
+				"@apps/react-ionic-vite-src": root,
 			},
 		},
 		define: {
